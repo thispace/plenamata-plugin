@@ -1,0 +1,75 @@
+.glossary-tooltip {
+
+    background-color: rgba( 199, 221, 139, 0.5 );
+    border: 0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0 size(4);
+    transition: all .3s ease-in-out;
+
+    &.-show {
+        background-color: rgba( 199, 221, 139, 0.8 );
+    }
+
+    &__tooltip {
+
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        max-width: size(300);
+        padding: 16px;
+        border-radius: 3px;
+        color: $c_text;
+        font-size: size(16);
+        background: rgb( 243, 247, 229 );
+        box-shadow: 0px 14px 24px rgba(26, 44, 49, 0.2);
+        z-index: 10;
+
+        p {
+            font-size: inherit !important;
+            line-height: 1.25;
+            margin-top: 0;
+        }
+
+        a {
+            color: #263F30;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        &.-show {
+            display: block !important;
+        }
+    }
+
+    &__close {
+
+        position: absolute;
+        right: 4px;
+        top: 6px;
+
+        button {
+        
+            background: transparent !important;
+            margin: 0 !important;
+            padding: 0 !important;
+
+            i {
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                text-indent: -9999vw;
+                background: asset-url('img/icon-close.svg') no-repeat center center;
+                background-size: 20px auto;
+            }
+
+        }
+
+    }
+
+    &__thumbnail {
+        max-width: 100%;
+        margin-bottom: size(16);
+    }
+}

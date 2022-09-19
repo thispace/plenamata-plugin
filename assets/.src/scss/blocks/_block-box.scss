@@ -1,0 +1,84 @@
+.plenamata-block-box {
+    &__header {
+        background-color: #221d18;
+        border-radius: 10px 10px 0 0;
+        padding: size(20) size(30);
+        text-align: center;
+
+        h4 {
+            color: white;
+            margin: 0;
+            font-size: size(18);
+            text-transform: uppercase;
+        }
+    }
+
+    &__main {
+        background-color: $c_lighter;
+        padding: size(20) size(30);
+
+        dl {
+            display: block;
+            font-size: size(16);
+
+            dt {
+                display: inline-block;
+                font-weight: bold;
+                margin-right: size(8);
+
+                &:after {
+                    content: ':';
+                }
+            }
+
+            dd {
+                display: inline;
+                margin: 0;
+            }
+
+            img {
+                display: block;
+                margin: size(10) 0;
+            }
+        }
+    }
+}
+
+.plenamata-get-involved-block {
+    &__main {
+        text-align: center;
+
+        p {
+            font-size: size(16) !important;
+
+            &:empty {
+                display: none;
+            }
+        }
+    }
+}
+
+.plenamata-initiative-block {
+    max-width: size(300);
+
+    button {
+        display: block;
+        margin-top: size(16);
+    }
+
+    .single & {
+        @include mobile {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include tablet-up {
+            float: left;
+            margin: 0 size(30) size(30) 0;
+        }
+
+        @media screen and (min-width: size(1025)) {
+            margin-left: size(-150);
+        }
+    }
+}

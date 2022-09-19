@@ -1,0 +1,11 @@
+.glossary-tooltip {
+    background-color: rgba($c_purple, 0.1);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0 size(4);
+}
+
+.select-glossary-tooltip {
+    max-width: 100%;
+    width: size(400);
+}

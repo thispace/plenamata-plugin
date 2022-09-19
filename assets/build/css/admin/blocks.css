@@ -1,0 +1,127 @@
+.plenamata-block-box__header {
+  background-color: #221d18;
+  border-radius: 10px 10px 0 0;
+  padding: 1.25rem 1.875rem;
+  text-align: center;
+}
+
+.plenamata-block-box__header h4 {
+  color: white;
+  margin: 0;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.plenamata-block-box__main {
+  background-color: #f5f1ee;
+  padding: 1.25rem 1.875rem;
+}
+
+.plenamata-block-box__main dl {
+  display: block;
+  font-size: 1rem;
+}
+
+.plenamata-block-box__main dl dt {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.plenamata-block-box__main dl dt:after {
+  content: ":";
+}
+
+.plenamata-block-box__main dl dd {
+  display: inline;
+  margin: 0;
+}
+
+.plenamata-block-box__main dl img {
+  display: block;
+  margin: 0.625rem 0;
+}
+
+.plenamata-get-involved-block__main {
+  text-align: center;
+}
+
+.plenamata-get-involved-block__main p {
+  font-size: 1rem !important;
+}
+
+.plenamata-get-involved-block__main p:empty {
+  display: none;
+}
+
+.plenamata-initiative-block {
+  max-width: 18.75rem;
+}
+
+.plenamata-initiative-block button {
+  display: block;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .single .plenamata-initiative-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 50.0625rem) {
+  .single .plenamata-initiative-block {
+    float: left;
+    margin: 0 1.875rem 1.875rem 0;
+  }
+}
+
+@media screen and (min-width: 64.0625rem) {
+  .single .plenamata-initiative-block {
+    margin-left: -9.375rem;
+  }
+}
+
+.plenamata-block label {
+  color: #555;
+}
+
+.glossary-tooltip {
+  background-color: rgba(82, 48, 150, 0.1);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0 0.25rem;
+}
+
+.select-glossary-tooltip {
+  max-width: 100%;
+  width: 25rem;
+}
+
+.glossary-entry__subsection {
+  align-items: center;
+  border-top: 1px solid #ddd !important;
+  color: #ff7373 !important;
+  display: flex;
+  font-size: 1rem !important;
+  margin: 2rem auto 1rem !important;
+  padding-top: 2rem !important;
+}
+
+.glossary-entry__subsection-hint {
+  background-color: #eee;
+  border-radius: 0.25rem;
+  color: #555;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-right: 0.625rem;
+  padding: 0.25rem;
+}
+
+.glossary-entry__subsection .block-editor-plain-text {
+  flex: 1;
+}
+
+
+/*# sourceMappingURL=blocks.css.map*/

@@ -1,0 +1,42 @@
+// Settings
+@import './settings/mixins';
+@import './settings/variables';
+@import './settings/global';
+//@import './settings/typography';
+
+// Components
+//@import './components/consent-banner';
+@import './components/tooltip';
+@import './components/news';
+@import './components/custom-drop';
+
+// Layouts
+//@import './layouts/header';
+//@import './layouts/footer';
+//@import './layouts/mobile-toolbar';
+
+// Blocks
+@import './blocks/block-box';
+@import './blocks/cop26-banner';
+@import './blocks/dashboard';
+@import './blocks/deforestation-charts';
+@import './blocks/deforestation-info';
+//@import './blocks/estimatives-area';
+@import './blocks/latest-posts';
+//@import './blocks/newsletter';
+
+// Formats
+@import './formats/glossary-tooltip';
+
+// Pages
+@import './pages/dashboard';
+//@import './pages/glossary';
+//@import './pages/home';
+//@import './pages/single-glossary';
+@import './pages/single-article';
+@import './pages/single-initiative';
+//@import './pages/contact';
+//@import './pages/archive';
+//@import './pages/blog';
+//@import './pages/about';
+@import './pages/scoreboard';

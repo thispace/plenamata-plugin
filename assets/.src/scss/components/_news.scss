@@ -1,0 +1,61 @@
+article.type-post {
+
+    .entry-meta {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > * {
+            margin-right: 15px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .byline {
+            opacity: 1 !important;
+
+            .author-prefix {
+                display: none;
+            }
+
+            .author {
+
+                a:any-link {
+                    color: $c_purple;
+                }
+            }
+        }
+
+        .external-link {
+            color: $c_purple !important;
+            font-weight: bold;
+            order: 999;
+            padding: 0;
+
+            // Overriding FontAwesome icon hardcoded by Newspack
+            .fas.fa-external-link-alt {
+                background-image: asset-url('img/external-source-icon.svg');
+                background-position: center;
+                height: 1em;
+                margin-right: size(4);
+                width: 1em;
+
+                &::before, &::after {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    .widget-boas & {
+
+        .entry-title {
+
+            a {
+                font-size: 1em !important;
+                line-height: 1.25 !important;
+            }
+        }
+    }
+}
